@@ -11,7 +11,7 @@ for counter in range(len(code_blocks)):
 	file_name = f"{dir}block{counter}.py"
 	os.system('clear')
 	print(f"{file_name}:  {code_n} of {len(code_blocks)-1}\n")
-	os.system(f'highlight {file_name}')
+	os.system(f'bat {file_name}')
 	input("\n")
 	print("=========================\n")
 	os.system(f'python3 {file_name}')
