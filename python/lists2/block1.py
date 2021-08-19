@@ -1,6 +1,6 @@
 # We can use range() to define a range of numbers
 for number in range(0, 10):
-	print (number)
+    print (number)
 
 # We can also create a list from range()
 # Here we "step by 2"
