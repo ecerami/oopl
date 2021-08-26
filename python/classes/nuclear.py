@@ -28,14 +28,15 @@ class NuclearPowerPlant:
     def is_running(self):
         return self._running
 
-# Here's how we should use the class.
+# *By convention*, here's how we should use the class.
 power_plant = NuclearPowerPlant()
 print(f"Running status:  {power_plant.is_running()}")
 power_plant.power_down()
 print(f"Running status:  {power_plant.is_running()}")
 print("-------------")
 
-# But, there's nothing in Python that will prevent this
+# But, there's nothing in Python that will prevent
+# someone from blowing things up!
 power_plant = NuclearPowerPlant()
 print(f"Running status:  {power_plant._running}")
 
