@@ -8,7 +8,7 @@ from abc import ABC, abstractmethod
 
 
 class Subscriber(ABC):
-    """The Subscriber interface declares the update method, used by publisher."""
+    """The Subscriber listens for events."""
 
     @abstractmethod
     def update(self, publisher):
