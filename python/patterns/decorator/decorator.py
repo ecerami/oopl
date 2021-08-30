@@ -11,8 +11,19 @@ class BaseDecorator(SecuritySystem):
     """
 
     def __init__(self, component):
-        """Initialize."""
+        """Initialize with the wrapped component."""
         self.component = component
+
+
+class EncryptionDecorator(BaseDecorator):
+    """Encrypts messages."""
+
+    def get_message(self):
+        """Override."""
+        message = self.component.get_message()
+
+        # no, this is not real encryption! :-)
+        return f"Encrypted[msg={message}]"
 
 
 class JapaneseDecorator(BaseDecorator):
@@ -24,14 +35,3 @@ class JapaneseDecorator(BaseDecorator):
 
         # no, this is not real tranlsation! :-)
         return f"JapaneseTranlsation[msg={message}]"
-
-
-class EncryptionDecorator(BaseDecorator):
-    """Encrypts the message."""
-
-    def get_message(self):
-        """Override."""
-        message = self.component.get_message()
-
-        # no, this is not real encryption! :-)
-        return f"Encrypted[msg={message}]"
