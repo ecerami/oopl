@@ -1,6 +1,6 @@
 # Illustrates how to extract an array slice
-players = ['charles', 'martina', 'michael', 'florence', 'eli'] 
+people = ['adbi', 'mustafa', 'david', 'kim', 'alex']  
 
 print("Here's a slice:'")
-for player in players[:-2]:
-    print(player.title())
+for person in people[:-2]:
+    print(person.title())

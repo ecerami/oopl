@@ -1,7 +1,7 @@
 # We can easily iterate through all the
 # elements in a list via a for loop
-magicians = ['alice', 'david', 'carolina'] 
-for magician in magicians: 
-    print(f"{magician.title()}, that was a great trick!")
+people = ['adbi', 'mustafa', 'kim'] 
+for person in people: 
+    print(f"Welcome, {person} to the class!")
     
-print("Thank you, everyone. That was a great magic show!")
+print("Hope you have a great semester!")

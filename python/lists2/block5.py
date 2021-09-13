@@ -1,7 +1,7 @@
 # This is a special slice that clones
 # the entire list
-players = ['charles', 'martina', 'michael', 'florence', 'eli'] 
+people = ['adbi', 'mustafa', 'david', 'kim', 'alex']  
 
 print("Here's a slice:'")
-for player in players[:]:
-    print(player.title())
+for person in people[:]:
+    print(person.title())
