@@ -1,9 +1,9 @@
 # Illustrates how to iterate all items in a dict
 
 user_0 = {
-    'username': 'efermi',
-    'first': 'enrico',
-    'last': 'fermi',
+    "username": "efermi",
+    "first": "enrico",
+    "last": "fermi",
     }
 
 for key, value in user_0.items():

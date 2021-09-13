@@ -1,19 +1,21 @@
 # You can even store dicts inside of other dicts!
 
+einstein = {
+    "first": "albert",
+    "last": "einstein",
+    "location": "princeton",
+}
+
+mcurie = {
+    "first": "marie",
+    "last": "curie",
+    "location": "paris",
+}
+
 users = {
-    'aeinstein': {
-        'first': 'albert',
-        'last': 'einstein',
-        'location': 'princeton',
-        },
-
-    'mcurie': {
-        'first': 'marie',
-        'last': 'curie',
-        'location': 'paris',
-        },
-
-    }
+    "aeinstein": einstein,
+    "mcurie": mcurie
+}
 
 for username, user_info in users.items():
     print(f"\nUsername: {username}")
