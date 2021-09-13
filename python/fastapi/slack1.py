@@ -6,3 +6,4 @@ app = FastAPI()
 def get_status():
     """Get status of messaging server."""
     return ({"status":  "running"})
+
