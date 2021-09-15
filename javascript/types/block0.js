@@ -13,3 +13,4 @@ console.log(typeof totalPrice);
 // Boolean Variable
 let activeUser = false;
 console.log(typeof activeUser)
+
