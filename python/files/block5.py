@@ -1,4 +1,4 @@
-filename = 'files/data/programming.txt'
+filename = 'data/programming.txt'
 
 # Here we write to a new file.
 # If we use 'a', we would append to an existing file.

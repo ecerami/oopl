@@ -1,4 +1,4 @@
-filename = 'files/data/pi_million_digits.txt'
+filename = 'data/pi_million_digits.txt'
 
 # Process the 1 million digits of pi
 pi_string = ''

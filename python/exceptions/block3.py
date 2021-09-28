@@ -8,5 +8,5 @@ def check_file_exists(filename):
     except FileNotFoundError:
         print(f"File {filename} does not exist!")
 
-check_file_exists("files/data/alice.txt")
-check_file_exists("files/data/little_women.txt")
+check_file_exists("data/alice.txt")
+check_file_exists("data/little_women.txt")

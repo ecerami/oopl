@@ -1,4 +1,4 @@
-filename = 'files/data/pi_digits.txt'
+filename = 'data/pi_digits.txt'
 
 # Process the pi data
 pi_string = ''
