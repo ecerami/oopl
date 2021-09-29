@@ -5,7 +5,7 @@ filename = "data/posts.json"
 
 with open(filename) as f:
     posts = json.load(f)
-    for post in posts[:5]:
+    for post in posts:
         print(f"{post['title']}")
         print(f".. Written by:  user_id:  {post['userId']}")
 
