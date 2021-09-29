@@ -1,10 +1,12 @@
+# requests is a Python package that you must install...
 import requests
 
-# See:  https://github.com/chubin/wttr.in
-url = "https://wttr.in/Boston?format=j1"
+# A JSON Placeholder that returns fake data
+url = "https://jsonplaceholder.typicode.com/posts"
 
 print(f"Getting live data from {url}.")
 r = requests.get(url)
-json = r.json()
-current = json["current_condition"][0]
-print (f"Current temp:  {current['temp_F']}")
+posts = r.json()
+for post in posts[:5]:
+    print(f"{post['title']}")
+    print(f".. Written by:  user_id:  {post['userId']}")

@@ -1,12 +1,12 @@
-# requests is a Python package that you must install...
-import requests
+import json
 
-# A JSON Placeholder that returns fake data
-url = "https://jsonplaceholder.typicode.com/posts"
+# A JSON file with fake data
+filename = "data/posts.json"
 
-print(f"Getting live data from {url}.")
-r = requests.get(url)
-posts = r.json()
-for post in posts[:5]:
-    print(f"{post['title']}")
-    print(f".. Written by:  user_id:  {post['userId']}")
+with open(filename) as f:
+    posts = json.load(f)
+    for post in posts[:5]:
+        print(f"{post['title']}")
+        print(f".. Written by:  user_id:  {post['userId']}")
+
+# Note that you can also write JSON via json.dump() method.
