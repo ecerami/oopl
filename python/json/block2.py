@@ -9,4 +9,4 @@ r = requests.get(url)
 posts = r.json()
 for post in posts[:5]:
     print(f"{post['title']}")
-    print(f".. Written by:  user_id:  {post['userId']}")
+    #print(f".. Written by:  user_id:  {post['userId']}")

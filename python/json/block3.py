@@ -1,7 +1,7 @@
 import requests
 
 # See:  https://github.com/chubin/wttr.in
-url = "https://wttr.in/Boston?format=j1"
+url = "https://wttr.in/London?format=j1"
 
 print(f"Getting live data from {url}.")
 r = requests.get(url)

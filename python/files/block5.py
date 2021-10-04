@@ -5,3 +5,4 @@ filename = 'data/programming.txt'
 with open(filename, 'w') as f:
     f.write("I love Java.\n")
     f.write("I love Python.\n")
+    f.write("I love TypeScript.\n")

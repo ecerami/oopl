@@ -4,3 +4,4 @@ try:
 except ZeroDivisionError:
     print("You cannot divide by zero.  Aborting!")
 
+print("OK")

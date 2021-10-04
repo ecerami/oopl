@@ -4,17 +4,17 @@ class Animal(ABC):
     """Animal Base Class"""
 
     def sleep(self):
-        """Attach a subscriber to the publisher."""
+        """Go to sleep."""
         print("Zzz........")
 
     @abstractmethod
     def animalSound(self):
-        """Detach a subscriber from the publisher."""
+        """Make a sound."""
         pass
 
 class Cow(Animal):
 
     def animalSound(self):
-        """Detach a subscriber from the publisher."""
+        """Make a sound."""
         print("Mooooo....")
 

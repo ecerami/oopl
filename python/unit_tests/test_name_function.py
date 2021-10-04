@@ -7,8 +7,8 @@ class NamesTestCase(unittest.TestCase):
     
     def test_first_last_name(self):
         """Do names like 'Janis Joplin' work?"""
-        formatted_name = get_formatted_name('janis', 'joplin')
-        self.assertEqual(formatted_name, 'Janis Joplin')
+        formatted_name = get_formatted_name('ethan', 'cerami')
+        self.assertEqual(formatted_name, 'Ethan Cerami')
 
     def test_first_last_middle_name(self):
         """Do names like 'Wolfgang Amadeus Mozart' work?"""

@@ -10,9 +10,10 @@ with open(filename) as f:
     # json.load() reads the JSON file and transforms
     # into Python data structures, e.g. lists and dicts.
     todo_list = json.load(f)
-    print(type(todo_list))
-    print(todo_list)
+    #print(type(todo_list))
+    #print(todo_list)
     for item in todo_list:
-        print(type(item))
-        print(item)
+        #print(type(item))
+        #print(item)
+        #print(f"{item['title']}")
         print(f"{item['title']}: {item['completed']}")
