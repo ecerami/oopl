@@ -30,5 +30,5 @@ class ConcreteSubscriberB(Subscriber):
 
     def update(self, publisher):
         """React to specific state events only."""
-        if publisher._state == 0 or publisher._state >= 2:
+        if publisher._state == 1:
             print(f"ConcreteSubscriberB: Reacted to: {publisher._state}")

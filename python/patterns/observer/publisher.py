@@ -37,7 +37,7 @@ class ConcretePublisher(Publisher):
 
     def attach(self, subscriber):
         """Attach a new subscriber."""
-        print("Publisher: Attached an subscriber.")
+        print("Publisher: Attached a subscriber.")
         self._subscriber.append(subscriber)
 
     def detach(self, subscriber):

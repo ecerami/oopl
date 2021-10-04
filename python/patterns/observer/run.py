@@ -20,3 +20,4 @@ publisher.attach(subscriber_b)
 
 publisher.run_business_logic()
 publisher.run_business_logic()
+
