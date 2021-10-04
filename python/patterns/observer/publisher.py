@@ -35,6 +35,10 @@ class ConcretePublisher(Publisher):
         self._state = None
         self._subscriber = []
 
+    def get_state(self):
+        """Get the Publisher State."""
+        return self._state
+
     def attach(self, subscriber):
         """Attach a new subscriber."""
         print("Publisher: Attached a subscriber.")

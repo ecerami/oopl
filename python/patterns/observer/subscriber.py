@@ -21,8 +21,8 @@ class ConcreteSubscriberA(Subscriber):
 
     def update(self, publisher):
         """React to specific state events only."""
-        if publisher._state < 3:
-            print(f"ConcreteSubscriberA: Reacted to: {publisher._state}")
+        if publisher.get_state() < 3:
+            print(f"ConcreteSubscriberA: Reacted to: {publisher.get_state()}")
 
 
 class ConcreteSubscriberB(Subscriber):
@@ -30,5 +30,5 @@ class ConcreteSubscriberB(Subscriber):
 
     def update(self, publisher):
         """React to specific state events only."""
-        if publisher._state == 1:
-            print(f"ConcreteSubscriberB: Reacted to: {publisher._state}")
+        if publisher.get_state() == 1:
+            print(f"ConcreteSubscriberB: Reacted to: {publisher.get_state()}")
