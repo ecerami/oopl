@@ -1,6 +1,6 @@
 // We can also let TypeScript infer our types
 let cityName = "Boston";
-let price = 33.12
+let price = 33.12;
 
 console.log(cityName + " " + price);
 
