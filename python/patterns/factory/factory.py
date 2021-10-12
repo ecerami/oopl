@@ -1,6 +1,5 @@
 """Example of the Factory Metod Pattern."""
 
-
 class MusicFactory():
     """
     Music Factory.
