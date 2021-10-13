@@ -29,7 +29,7 @@ class App extends React.Component {
 	/**
 	 * Illustrates how to perform conditionals in JSX.
 	 */
-	getStatusMessage(siteIsActive: boolean): JSX.Element {
+	private getStatusMessage(siteIsActive: boolean): JSX.Element {
 		if (siteIsActive) {
 			return <div>Site is active.</div>;
 		} else {
@@ -41,7 +41,7 @@ class App extends React.Component {
 	 * Illustrates how to iterate elements in JSX.
 	 * @param stockPrices
 	 */
-	getStockTable(stockPrices: number[]): JSX.Element {
+	private getStockTable(stockPrices: number[]): JSX.Element {
 		// Map will call the specified function on each element
 		// and return an array of results.
 		var tableData = stockPrices.map(this.getStockRow);
@@ -57,7 +57,10 @@ class App extends React.Component {
 		);
 	}
 
-	getStockRow(stockPrice: number) {
+	/**
+	 * Gets a single row of data.
+	 */
+	private getStockRow(stockPrice: number) {
 		return (
 			<tr>
 				<td>{stockPrice}</td>
