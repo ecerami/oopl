@@ -12,6 +12,6 @@ console.log(sum);
 let adder = function (a, b) {
     return (a + b)
 }
-sum = add (2, 4);
+sum = adder (2, 4);
 console.log(sum);
 
