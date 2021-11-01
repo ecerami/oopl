@@ -4,7 +4,7 @@ import "./App.css";
 /**
  * Properties Specific to this React Component.
  */
-type CardImageProps = {
+interface CardImageProps {
 	img: string,
 }
 

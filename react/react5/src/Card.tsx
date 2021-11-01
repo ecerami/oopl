@@ -7,7 +7,7 @@ import CardImage from "./CardImage";
 /**
  * Properties Specific to this React Component.
  */
-type CardProps = {
+interface CardProps {
 	img: string;
 	title: string;
 	text: string;

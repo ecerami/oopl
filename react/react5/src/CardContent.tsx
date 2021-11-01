@@ -4,7 +4,7 @@ import "./App.css";
 /**
  * Properties Specific to this React Component.
  */
-type CardContentProps = {
+interface CardContentProps {
 	text: string
 }
 
