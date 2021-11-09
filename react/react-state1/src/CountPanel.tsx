@@ -20,6 +20,9 @@ class CountPanel extends React.Component<{}, CounterState> {
 		this.state = {
 			counter: 0
 		};
+		// This binding is necessary to make `this` work in the callback
+		this.handleAddClick = this.handleAddClick.bind(this);
+		this.handleSubtractClick = this.handleSubtractClick.bind(this);
 	}
 
 	/**
@@ -30,8 +33,8 @@ class CountPanel extends React.Component<{}, CounterState> {
 		return (
 			<div>
 				<h1>Current Counter: {this.state.counter}</h1>
-				<button onClick={() => this.handleAddClick()}>Add</button>
-				<button onClick={() => this.handleSubtractClick()}>Subtract</button>
+				<button onClick={this.handleAddClick}>Add</button>
+				<button onClick={this.handleSubtractClick}>Subtract</button>
 			</div>
 		);
 	}
