@@ -1,5 +1,5 @@
 # Illustrates how to extract an array slice
-people = ['adbi', 'mustafa', 'david', 'kim', 'alex']  
+people = ['anna', 'alex', 'nhat', 'shuto', 'luis']  
 
 print("Here's a slice:")
 for person in people[3:]:
