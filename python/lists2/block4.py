@@ -2,5 +2,5 @@
 people = ['anna', 'alex', 'nhat', 'shuto', 'luis']  
 
 print("Here's a slice:")
-for person in people[:-2]:
+for person in people[0:-2]:
     print(person.title())
