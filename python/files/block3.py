@@ -1,6 +1,6 @@
 filename = 'data/pi_digits.txt'
 
-# Process the pi data
+# Collect the pi data into one long string
 pi_string = ''
 with open(filename) as f:
     for line in f:
