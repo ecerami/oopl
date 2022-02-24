@@ -1,6 +1,6 @@
 # Another exception that you can catch...
 
-def check_file_exists(filename):
+def read_data(filename):
     try:
         with open(filename, encoding='utf-8') as f:
             contents = f.read()
@@ -8,5 +8,5 @@ def check_file_exists(filename):
     except FileNotFoundError:
         print(f"File {filename} does not exist!")
 
-check_file_exists("data/alice.txt")
-check_file_exists("data/little_women.txt")
+read_data("data/alice.txt")
+read_data("data/little_women.txt")
