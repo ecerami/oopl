@@ -1,11 +1,13 @@
-# A Bare Bones Slack API
-# Illustrates basic usage of FastAPI
+"""
+A Bare Bones Slack API
+Illustrates basic usage of FastAPI.
+"""
 from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel
 from typing import List
 
-# Message class defined in Pydantic
 class Message(BaseModel):
+    """Message class defined in Pydantic."""
     channel: str
     author: str
     text: str
