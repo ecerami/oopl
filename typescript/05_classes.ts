@@ -7,7 +7,7 @@ class Customer {
         this.isActive = true;
     }
 
-    public announce() {
+    public announce(): string {
         return "Hello, my name is " + this.name + ".";
     }
 }
