@@ -1,13 +1,13 @@
 class Customer {
-    name: string;
-    isActive:  boolean;
+    public name: string;
+    public isActive:  boolean;
 
-    constructor(name: string){
+    public constructor(name: string){
         this.name = name;
         this.isActive = true;
     }
 
-    announce() {
+    public announce() {
         return "Hello, my name is " + this.name + "."
     }
 }
