@@ -3,8 +3,8 @@
  */
 class Car {
     protected make: string;
-    protected  model: string;
-    protected  year: number;
+    protected model: string;
+    protected year: number;
 
     /**
      * Initialize.
@@ -18,7 +18,7 @@ class Car {
     /**
      * Gets Descriptive Summary of Car.
      */
-    public get_descriptive_name() {
+    public get_descriptive_name(): string {
         return `${this.make} ${this.model} ${this.year}`
     }
 
@@ -39,7 +39,7 @@ class ElectricCar extends Car {
     /**
      * Over-ride get_descriptive_name.
      */
-    public get_descriptive_name() {
+    public get_descriptive_name(): string {
         let desc = `${this.make} ${this.model} ${this.year} `
         desc += `[${this.batterySize}-kWh battery]`
         return desc;
@@ -51,4 +51,3 @@ console.log(car0.get_descriptive_name())
 
 let car1 = new ElectricCar ("Tesla", "Model S", 2021, 75)
 console.log(car1.get_descriptive_name())
-
