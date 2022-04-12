@@ -8,7 +8,7 @@ class Customer {
     }
 
     public announce() {
-        return "Hello, my name is " + this.name + "."
+        return "Hello, my name is " + this.name + ".";
     }
 }
 
