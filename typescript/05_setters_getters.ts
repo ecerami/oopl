@@ -1,7 +1,7 @@
 class Person {
-    public firstName: string
-    public lastName:  string
-    private _age: number
+    public firstName: string;
+    public lastName:  string;
+    private _age: number;
 
     constructor(firstName: string, lastName: string, age: number){
         this.firstName = firstName;
@@ -9,7 +9,7 @@ class Person {
         this._age = age;
     }
 
-    get age() {
+    get age(): number {
         return this._age;
     }
 
