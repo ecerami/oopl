@@ -1,6 +1,6 @@
 class Customer {
-    name: string
-    isActive:  boolean
+    name: string;
+    isActive:  boolean;
 
     constructor(name: string){
         this.name = name;
@@ -12,6 +12,6 @@ class Customer {
     }
 }
 
-let customer = new Customer("Bob")
-console.log(customer.announce())
+let customer = new Customer("Bob");
+console.log(customer.announce());
 
