@@ -14,7 +14,7 @@
     /**
      * Abstract Method.
      */
-    abstract getSalary(): number
+    abstract getSalary(): number;
 
     get fullName(): string {
         return `${this.firstName} ${this.lastName}`;
