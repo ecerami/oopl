@@ -1,7 +1,7 @@
 class Person {
     public firstName: string;
     public lastName:  string;
-    private _age: number = 0;
+    private age_private: number = 0;
 
     constructor(firstName: string, lastName: string, age: number){
         this.firstName = firstName;
@@ -10,14 +10,14 @@ class Person {
     }
 
     get age(): number {
-        return this._age;
+        return this.age_private;
     }
 
     set age(age: number) {
         if (age <= 0 || age >= 200) {
             throw new Error('The age is invalid:  ' + age);
         }
-        this._age = age;
+        this.age_private = age;
     }
 }
 
