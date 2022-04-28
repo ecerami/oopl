@@ -1,17 +1,19 @@
 
 /**
- * Example of an Interface with methods.
+ * Example of an Interface with Only Properties.
  */
-interface Animal {
-    makeNoise(): string;
+interface House {
+    numBedRooms: number;
+    numBathRooms: number;
+    zipCode: string;
+    salePrice: number;
 }
 
-class Cow implements Animal {
-    makeNoise(): string {
-        return "Moo!"
-    }
+let house0: House = {
+    numBedRooms: 2,
+    numBathRooms: 1,
+    zipCode: "10021",
+    salePrice: 1000000
 }
-
-let cow = new Cow();
-console.log(cow.makeNoise())
+console.log(house0.zipCode)
 
