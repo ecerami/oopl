@@ -71,7 +71,7 @@ class JournalPanel extends React.Component<{}, JournalState> {
 	 */
 	 getJournalRow(journalItem:JournalEntry) {
 		 return (
-			<tr key={journalItem.timeStamp.toString()}>
+			<tr key={journalItem.timeStamp.getSeconds()}>
 				<td>{journalItem.timeStamp.toString()}</td>
 				<td>{journalItem.textEntry}</td>
 			</tr>
