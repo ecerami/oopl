@@ -1,0 +1,15 @@
+<h2>{{ source }}</h2>
+<h3>Breaking News</h3>
+
+<div *ngFor="let headline of breakingNews">
+  <div class="title">{{ headline.title }}</div>
+  <div class="blurb">
+    <span class="date">{{ headline.timestamp | date: "short" }}</span
+    >:
+    {{ headline.blurb }}
+  </div>
+</div>
+
+<div *ngIf="showFooter">
+  <div class="footer">@2022 New York Times.</div>
+</div>

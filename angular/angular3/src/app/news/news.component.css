@@ -1,0 +1,18 @@
+.date {
+    color:darkblue;
+}
+
+.title {
+    background-color: aliceblue;
+    font-weight: bold;
+    padding:10px;
+}
+
+.blurb {
+    padding:10px;
+}
+
+.footer {
+    padding-top:50px;
+    font-size:small;
+}
