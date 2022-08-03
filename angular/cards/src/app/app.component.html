@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css"
+      integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Card Example</h1>
+
+    <div class="pure-g">
+      <div class="pure-u-1-4">
+        <app-card
+          image="/assets/strawberries.jpg"
+          title="Strawberries"
+          text="1 Lb, $3.49"
+          [footer]="footer_text"
+        ></app-card>
+    </div>
+    <div class="pure-u-1-4">
+      <app-card
+        image="/assets/bananas.jpg"
+        title="Bananas"
+        text="1 Bunch, $1.65"
+        [footer]="footer_text"
+      ></app-card>
+    </div>
+    <div class="pure-u-1-4">
+      <app-card
+        image="/assets/blueberries.jpg"
+        title="Blueberries"
+        text="1 Pint, $4.99"
+        [footer]="footer_text"
+      ></app-card>
+    </div>
+    <div class="pure-u-1-4">
+      <app-card
+        image="/assets/raspberries.jpg"
+        title="Raspberries"
+        text="6oz, $3.99"
+        [footer]="footer_text"
+      ></app-card>
+    </div>
+    </div>
+  </body>
+</html>

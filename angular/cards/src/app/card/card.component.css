@@ -1,0 +1,31 @@
+.card {
+    border: 1px solid #eeeeee;
+    height:250px;
+    padding:20px
+}
+
+.card_image {
+    width:100px;
+    height:100px;
+}
+
+.card_title {
+    font-size: larger;
+}
+
+.card_text {
+    font-size:small;
+}
+
+.card_footer {
+    font-size:65%;
+    margin-top:20px;
+}
+
+.card_action {
+    margin-top:20px;
+}
+
+.button-small {
+    font-size:65%;
+}
