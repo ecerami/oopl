@@ -1,0 +1,50 @@
+<div class="journal">
+  <form class="pure-form">
+    <input
+      type="text"
+      size="50"
+      placeholder="Enter journal entry"
+      [(ngModel)]="currentText"
+      name="text"
+    />&nbsp;
+    <button class="pure-button pure-button-primary" (click)="addEntry()">
+      Add new Journal Entry
+    </button>
+  </form>
+  <div class="task-table">
+    <table class="pure-table pure-table-horizontal">
+      <thead>
+        <tr>
+          <th>Timestamp</th>
+          <th>Entry</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tr *ngFor="let entry of entries; let i = index">
+        <td>{{ entry.text }}</td>
+        <td>{{ entry.timestamp | date: "short" }}</td>
+        <td>
+          <button
+            class="pure-button pure-button-primary"
+            (click)="deleteEntry(i)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div *ngIf="logService.log_messages.length">
+  <h4>Log Messages</h4>
+  <button type="button" class="pure-button" (click)="logService.clear()">
+    Clear messages
+  </button>
+  <p></p>
+  <table class="pure_table pure-table-horizontal">
+    <tr *ngFor="let log of logService.log_messages">
+      <td>{{ log }}</td>
+    </tr>
+  </table>
+</div>
