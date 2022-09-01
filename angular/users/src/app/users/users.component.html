@@ -1,0 +1,22 @@
+<h3>Users Retrieved via HTTP</h3>
+<div *ngIf="users?.length > 0; else elseBlock">
+  <table class="pure-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #elseBlock>
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"/>
+  </div>
+</ng-template>
