@@ -2,7 +2,7 @@
 
 def read_data(filename):
     try:
-        with open(filename, encoding='utf-8') as f:
+        with open(filename) as f:
             contents = f.read()
         print(f"File {filename} exists!")
     except FileNotFoundError:
