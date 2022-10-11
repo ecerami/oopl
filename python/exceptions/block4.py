@@ -9,6 +9,6 @@ def count_words(filename):
     except FileNotFoundError:
         print(f"Could not find file {filename}.")
 
-filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt', 'little_women.txt']
+filenames = ['alice.txt', 'siddhartha.txt', 'little_women.txt', 'moby_dick.txt']
 for filename in filenames:
     count_words(f"data/{filename}")
