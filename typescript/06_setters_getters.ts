@@ -21,7 +21,8 @@ class Person {
     }
 }
 
-let person = new Person("John", "Smith", 200);
-person.age = 29; // This works
-person.age = 250; // This fails
+let person = new Person("John", "Smith", 20);
+console.log(person.age);
+// person.age = 29; // This works
+//person.age = 250; // This fails
 
