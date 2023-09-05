@@ -1,3 +1,6 @@
+# Example f-string
+# f-strings are used to insert variables into string
+
 product = "iPad Pro"
 cost = 699.99
 
