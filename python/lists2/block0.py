@@ -1,6 +1,6 @@
 # We can easily iterate through all the
 # elements in a list via a for loop
-people = ['anna', 'alex', 'nhat', 'shuto', 'luis']  
+people = ['anna', 'alex', 'nhat', 'shuto', 'luis']
 for person in people: 
     print(f"Welcome, {person} to the class!")
     

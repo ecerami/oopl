@@ -1,5 +1,5 @@
 # Another List Comprehension
-fruits = ['mango', 'kiwi', 'strawberry', 'pineapple']
+fruits = ["mango", "kiwi", "strawberry", "pineapple"]
 output = []
 for fruit in fruits:
     output.append(fruit.upper())
