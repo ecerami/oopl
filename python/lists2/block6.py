@@ -4,7 +4,7 @@
 # Here is a list
 # We can change it's contents
 dimensions = [200, 50]
-dimensions[0] = 0
+dimensions[0] = 20
 print(dimensions)
 
 # Here is a tuple
