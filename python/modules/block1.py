@@ -1,4 +1,6 @@
-# Import alias example
+"""
+Module Example.
+"""
 import pizza as pz
 
 pz.make_pizza(16, 'pepperoni')
