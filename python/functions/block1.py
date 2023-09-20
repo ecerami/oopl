@@ -1,4 +1,6 @@
-# We can also pass parameters to the function
+"""
+We can also pass parameters to the function.
+"""
 
 def greet_user(name, time_of_day):
     """Display a greeting!"""

@@ -1,9 +1,11 @@
-# Functions can also return values.
-# You can return anything you want from a function.
-# e.g. a number, a list, a dict, etc.
+"""
+Functions can also return values.
+You can return anything you want from a function.
+e.g. a number, a list, a dict, etc.
+"""
 
-def add (x, y):
-    return x + y
+def add (num1, num2):
+    """Add two numbers."""
+    return num1 + num2
 
-sum = add(5, 2)
-print(sum)
+print(add(5, 2))

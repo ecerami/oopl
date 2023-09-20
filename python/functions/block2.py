@@ -1,4 +1,6 @@
-# Parameters can have defaults.
+"""
+Parameters can have defaults.
+"""
 
 def greet_user(name, time_of_day="morning"):
     """Display a greeting!"""
