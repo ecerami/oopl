@@ -1,6 +1,6 @@
-"""Dog Class."""
+"""Dog Module."""
 class Dog:
-    """A simple attempt to model a dog."""  
+    """Dog Class."""  
 
     def __init__(self, name, age):
         """Initialize name and age attributes."""
