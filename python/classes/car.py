@@ -1,6 +1,6 @@
-"""Car Class."""
+"""Car Module."""
 class Car:
-    """A simple attempt to represent a car."""
+    """Car Class."""
 
     def __init__(self, make, model, year):
         """Initialize Car."""
