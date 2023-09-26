@@ -13,5 +13,6 @@ def build_profile(first, last, **kwargs):
 # is packed into a dictionary and passed to user_info.
 user_profile = build_profile('albert', 'einstein',
     location='princeton',
-    field='physics')
+    field='physics',
+    age=45)
 print(user_profile)

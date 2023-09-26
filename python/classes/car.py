@@ -7,27 +7,10 @@ class Car:
         self.make = make
         self.model = model
         self.year = year
-        self.odometer_reading = 0
 
-    def get_descriptive_name(self):
-        """Get a descriptive name for the car."""
-        long_name = f"{self.year} {self.make} {self.model}"
-        return long_name.title()
-
-    def read_odometer(self):
-        """Read the odometer."""
-        print(f"This car has {self.odometer_reading} miles on it.")
-
-    def update_odometer(self, mileage):
-        """Update the odometer to the specified mileage."""
-        if mileage >= self.odometer_reading:
-            self.odometer_reading = mileage
-        else:
-            print("You can't roll back an odometer!")
-
-    def increment_odometer(self, miles):
-        """Increment the odometer by N miles."""
-        self.odometer_reading += miles
+    def get_description(self):
+        """Get a full description of the car."""
+        return f"{self.year} {self.make} {self.model}"
 
 
 class ElectricCar(Car):
@@ -41,11 +24,14 @@ class ElectricCar(Car):
         super().__init__(make, model, year)
         self.battery_size = battery_size
 
-    def describe_battery(self):
-        """Print a statement describing the battery size."""
-        print(f"This car has a {self.battery_size}-kWh battery.")
+    def get_description(self):
+        """Over-ride the get_description() method;  this is polymorphism."""
+        return f"{super().get_description()}, battery={self.battery_size}-kWh"
 
 
-my_tesla = ElectricCar("tesla", "model s", 2019, 75)
-print(my_tesla.get_descriptive_name())
-my_tesla.describe_battery()
+honda = Car("Honda", "CRV", 2023)
+print(honda.get_description())
+
+
+tesla = ElectricCar("Tesla", "Model 3", 2023, 75)
+print(tesla.get_description())

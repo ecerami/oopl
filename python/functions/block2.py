@@ -3,7 +3,6 @@ Parameters can have defaults.
 """
 
 def greet_user(name, time_of_day="morning"):
-    """Display a greeting!"""
     print(f"Good {time_of_day}, {name}!")
 
 greet_user("Bob")

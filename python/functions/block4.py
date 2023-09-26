@@ -10,4 +10,4 @@ def make_pizza(size, *args):
 
 # When we call make_pizza, "pepperoni" and "mushrooms" are
 # merged into a list and passed to *toppings
-make_pizza("16", "pepperoni", "mushrooms")
+make_pizza("16", "pepperoni", "mushrooms", "extra cheese")
