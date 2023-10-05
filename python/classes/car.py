@@ -29,8 +29,8 @@ class ElectricCar(Car):
         return f"{super().get_description()}, battery={self.battery_size}-kWh"
 
 
-honda = Car("Honda", "CRV", 2023)
-print(honda.get_description())
+#honda = Car("Honda", "CRV", 2023)
+#print(honda.get_description())
 
 
 tesla = ElectricCar("Tesla", "Model 3", 2023, 75)

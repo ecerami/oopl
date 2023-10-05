@@ -1,23 +1,16 @@
 """Zillow Example."""
 
-from property import Land, SingleFamilyHome, Person
+from property import HomeForRent, HomeForSale, Owner
 
-person = Person("Ethan", "Cerami")
-lot1 = Land("Houston", "Texas", "77001", 100_000, 3)
-lot2 = Land("Houston", "Texas", "77002", 200_000, 1)
+owner = Owner("Ethan", "Cerami")
 
-house1 = SingleFamilyHome("Houston", "Texas", "77001",
-                          200_000, 3, 2)
-house2 = SingleFamilyHome("Houston", "Texas", "77001",
-                          250_000, 2, 1)
+house1 = HomeForRent("Houston", "Texas", "77001", owner, 2000)
+house1.add_room("Bedroom")
+house1.add_room("Bedroom")
+house1.add_room("Bathroom")
+house2 = HomeForSale("Houston", "Texas", "77001", owner, 200_000)
+house2.add_room("Bedroom")
+house2.add_room("Bathroom")
 
-lot1.describe()
-lot2.describe()
-house1.describe()
-house2.describe()
-
-print(f"Lot1 sold status = {lot1.sold}")
-lot1.buy(person, 50_000)
-print(f"Lot1 sold status = {lot1.sold}")
-lot1.buy(person, 100_000)
-print(f"Lot1 sold status = {lot1.sold}")
+print(house1.get_description())
+print(house2.get_description())
