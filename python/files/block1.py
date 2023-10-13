@@ -1,7 +1,8 @@
-filename = 'data/pi_digits.txt'
+"""File I/O Example."""
+PI_DIGITS_FILE = 'files/data/pi_digits.txt'
 
-# Open the file and read into an array of lines.
-with open(filename) as f:
+# Open the file and read into a list of lines.
+with open(PI_DIGITS_FILE, encoding="utf-8") as f:
     lines = f.readlines()
 
 # Iterate through all the lines.
