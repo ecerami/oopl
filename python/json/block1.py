@@ -1,9 +1,10 @@
+"""JSON Example."""
 import json
 
 # A JSON file with fake data
-filename = "data/posts.json"
+POSTS_FILE = "json/data/posts.json"
 
-with open(filename) as f:
+with open(POSTS_FILE, encoding="utf-8") as f:
     posts = json.load(f)
     for post in posts:
         print(f"{post['title']}")

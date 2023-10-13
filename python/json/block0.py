@@ -1,11 +1,11 @@
+"""JSON Example."""
 import json
 
 # A JSON file with todo items
-filename = "data/todo.json"
+TODO_FILE = "json/data/todo.json"
 
 # Use the with clause to open the file
-with open(filename) as f:
-
+with open(TODO_FILE, encoding="utf-8") as f:
     # Load/read the JSON Contents
     # json.load() reads the JSON file and transforms
     # into Python data structures, e.g. lists and dicts.
