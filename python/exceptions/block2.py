@@ -1,3 +1,5 @@
+"""Exception Example."""
+
 # Illustrates how to integrate exception handling with user input
 
 print("Give me two numbers, and I'll divide them.")

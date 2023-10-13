@@ -1,7 +1,8 @@
-def count_words(filename):
+"""Exception Example."""
+def count_words(target_file):
     """Count the approximate number of words in a file."""
     try:
-        with open(filename) as f:
+        with open(target_file, encoding="utf-8") as f:
             contents = f.read()
         words = contents.split()
         num_words = len(words)
@@ -11,4 +12,4 @@ def count_words(filename):
 
 filenames = ['alice.txt', 'siddhartha.txt', 'little_women.txt', 'moby_dick.txt']
 for filename in filenames:
-    count_words(f"data/{filename}")
+    count_words(f"exceptions/data/{filename}")
