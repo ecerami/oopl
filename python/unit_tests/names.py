@@ -1,3 +1,5 @@
+"""Example Function."""
+
 def get_formatted_name(first, last, middle=''):
     """Generate a neatly formatted full name."""
     if middle:
