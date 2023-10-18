@@ -14,17 +14,14 @@ class Publisher(ABC):
     @abstractmethod
     def attach(self, subscriber):
         """Attach a subscriber to the publisher."""
-        pass
 
     @abstractmethod
     def detach(self, subscriber):
         """Detach a subscriber from the publisher."""
-        pass
 
     @abstractmethod
     def notify(self):
         """Notify all subscribers about an event."""
-        pass
 
 
 class ConcretePublisher(Publisher):

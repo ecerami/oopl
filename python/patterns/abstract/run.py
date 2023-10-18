@@ -7,6 +7,4 @@ from animal import Animal, Cow
 # But this will work...
 cow = Cow()
 cow.sleep()
-cow.animalSound()
-
-
+cow.make_sound()

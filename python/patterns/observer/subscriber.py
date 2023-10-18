@@ -13,7 +13,6 @@ class Subscriber(ABC):
     @abstractmethod
     def update(self, publisher):
         """Receive update from publisher."""
-        pass
 
 
 class ConcreteSubscriberA(Subscriber):

@@ -1,3 +1,6 @@
+"""
+Example of Abstract Base Class.
+"""
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
@@ -8,13 +11,12 @@ class Animal(ABC):
         print("Zzz........")
 
     @abstractmethod
-    def animalSound(self):
+    def make_sound(self):
         """Make a sound."""
-        pass
 
 class Cow(Animal):
+    """Cow Subclass."""
 
-    def animalSound(self):
+    def make_sound(self):
         """Make a sound."""
         print("Mooooo....")
-
