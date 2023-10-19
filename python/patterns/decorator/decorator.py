@@ -33,5 +33,5 @@ class JapaneseDecorator(BaseDecorator):
         """Override."""
         message = self.component.get_message()
 
-        # no, this is not real tranlsation! :-)
+        # no, this is not real translation! :-)
         return f"JapaneseTranlsation[msg={message}]"

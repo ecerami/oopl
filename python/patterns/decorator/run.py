@@ -1,9 +1,8 @@
 """Run the example decorator pattern."""
 
-
+from component import SecuritySystem
 from decorator import EncryptionDecorator
 from decorator import JapaneseDecorator
-from component import SecuritySystem
 
 
 def get_message(component):
