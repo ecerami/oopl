@@ -8,7 +8,6 @@ class MusicService(ABC):
     @abstractmethod
     def search(self, q):
         """Search the service with the specified q parameter."""
-        pass
 
 
 class SpotifyService(MusicService):

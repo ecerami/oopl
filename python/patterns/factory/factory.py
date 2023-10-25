@@ -28,3 +28,5 @@ class MusicFactory():
 
             # Here, we instantiante the object
             return service()
+        return None
+        

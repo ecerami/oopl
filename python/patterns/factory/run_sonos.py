@@ -18,11 +18,12 @@ def search(music_factory, music_service_name, q):
 
 
 # Create the music factory and register music services
-music_factory = MusicFactory()
-music_factory.register_music_service("Spotify", SpotifyService)
-music_factory.register_music_service("Pandora", PandoraService)
+sonos_factory = MusicFactory()
+sonos_factory.register_music_service("Spotify", SpotifyService)
+sonos_factory.register_music_service("Pandora", PandoraService)
+
 # ... additional services can be added in real-time.
 
 # Now search across services...
-search(music_factory, "Spotify", "beethoven")
-search(music_factory, "Pandora", "mozart")
+search(sonos_factory, "Spotify", "beethoven")
+search(sonos_factory, "Pandora", "mozart")
