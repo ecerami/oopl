@@ -7,6 +7,7 @@ class Game:
     def __init__(self):
         """Initialize the game, and the screen."""
         pygame.init()
+        self.clock = pygame.time.Clock()
         self.screen = pygame.display.set_mode([800,800])
         pygame.display.set_caption("Arcade Game!")
 
@@ -23,6 +24,11 @@ class Game:
             # Redraw the screen
             self.screen.fill([255,0,0])
             pygame.display.flip()
+
+            # Wait a bit;  this controls the frame rate
+            # When set to, e.g. 60, PyGame does its best
+            # to run the loop 60 times / second.
+            self.clock.tick(60)
 
 game = Game()
 game.run_game()
