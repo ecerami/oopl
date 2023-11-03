@@ -4,13 +4,13 @@
 
 //  String variable.
 let firstName = "Ethan";
-console.log(typeof firstName);
+console.log(typeof(firstName));
 
 //  Number Variable
 let totalPrice = 159.22;
-console.log(typeof totalPrice);
+console.log(typeof(totalPrice));
 
 // Boolean Variable
 let activeUser = false;
-console.log(typeof activeUser)
+console.log(typeof(activeUser))
 

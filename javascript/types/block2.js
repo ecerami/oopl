@@ -14,7 +14,7 @@ console.log(firstName.repeat(10))
 
 // Substrings
 let message = "Hello, World!!!!";
-console.log(message.substring(7, 6))
+console.log(message.substring(7, 12))
 
 // String length
 console.log(message.length)
