@@ -5,11 +5,11 @@ let movies = [
 ];
 
 // Another Arrow Function
-let bestMovies = movies.filter((movie) => {
-	return movie.rating >= 90;
+let bestMovies = movies.filter(movie => {
+	return movie.rating >= 89;
 });
-console.log(bestMovies);
+console.table(bestMovies);
 
 // Even more compact
-bestMovies = movies.filter((movie) => movie.rating >= 90);
-console.log(bestMovies);
+bestMovies = movies.filter(movie => movie.rating >= 89);
+console.table(bestMovies);
