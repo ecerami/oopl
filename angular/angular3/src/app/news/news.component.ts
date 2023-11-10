@@ -1,12 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Headline } from './headline';
 
 @Component({
   selector: 'app-news',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './news.component.html',
-  styleUrls: ['./news.component.css'],
+  styleUrl: './news.component.css'
 })
-export class NewsComponent implements OnInit {
+export class NewsComponent {
   source = 'New York Times';
   breakingNews = Array<Headline>();
   showFooter = true;
@@ -15,27 +18,20 @@ export class NewsComponent implements OnInit {
     let headline0: Headline = {
       timestamp: new Date(),
       title:
-        'July was Wall Street’s best month since 2020, a rally fueled in part by ' +
-        'better-than-expected earnings from some of America’s biggest companies.',
+        'Manchin Says He Will Not Seek Re-election, Dealing Blow to Democrats',
       blurb:
-        'The S&P 500 rose 1.4 percent Friday, taking its gain for July to 9.1 ' +
-        'percent, its best month since the first announcements about an effective ' +
-        'Covid-19 vaccine helped send stocks nearly 11 percent higher in ' +
-        'November 2020.',
+        'The decision by Senator Joe Manchin will leave open a seat in a deeply ' +
+        'red state, threatening Democrats’ hold on the Senate.',
     };
     let headline1: Headline = {
       timestamp: new Date(),
       title:
-        'President Gotabaya Rajapaksa of Sri Lanka resigned via email days after ' +
-        'fleeing the country amid protests and economic turmoil.',
+        'House Republicans Clash Over Spending Days Ahead of Shutdown Deadline',
       blurb:
-        'Even as the news filtered out, the protest movement that forced out the ' +
-        'island nation’s powerful political dynasty largely continued as it ' +
-        'has for months.',
+        'Republicans abandoned two of their own spending measures this week as they toiled to ' +
+        'agree on a stopgap spending bill to avert a government shutdown.'
     };
     this.breakingNews.push(headline0);
     this.breakingNews.push(headline1);
   }
-
-  ngOnInit(): void {}
 }
