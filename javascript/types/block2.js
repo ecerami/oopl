@@ -10,11 +10,11 @@ console.log(fullName);
 // Various String Operations
 console.log(firstName.toLowerCase());
 console.log(firstName.toUpperCase());
-console.log(firstName.repeat(10))
+console.log(firstName.repeat(10));
 
 // Substrings
 let message = "Hello, World!!!!";
-console.log(message.substring(7, 12))
+console.log(message.substring(7, 12));
 
 // String length
-console.log(message.length)
+console.log(message.length);
