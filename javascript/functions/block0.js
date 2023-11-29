@@ -2,7 +2,7 @@
 
 //  Example Function with parameters and return value.
 function add (a, b) {
-    return (a + b)
+    return (a + b);
 }
 
 let sum = add (2, 4);
