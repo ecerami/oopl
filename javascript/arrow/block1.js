@@ -1,15 +1,15 @@
 let movies = [
-	{ movie: "Black Panther", rating: 95 },
-	{ movie: "Black Adam", rating: 89 },
-	{ movie: "Ticket to Paradise", rating: 88 },
+	{ title: "Black Panther", rating: 95 },
+	{ title: "The Matrix", rating: 83 },
+	{ title: "Lord of the Rings:  The Two Towers", rating: 95 }
 ];
 
 // Another Arrow Function
 let bestMovies = movies.filter(movie => {
-	return movie.rating >= 89;
+	return movie.rating >= 90;
 });
 console.table(bestMovies);
 
 // Even more compact
-bestMovies = movies.filter(movie => movie.rating >= 89);
+bestMovies = movies.filter(movie => movie.rating >= 90);
 console.table(bestMovies);
