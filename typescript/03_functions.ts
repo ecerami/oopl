@@ -3,6 +3,6 @@ function add (a: number, b: number): number {
     return (a + b);
 }
 
-let sum = add (2, 5)
-console.log(sum)
+let sum = add (2, 5);
+console.log(sum);
 
