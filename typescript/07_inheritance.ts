@@ -19,7 +19,7 @@ class Car {
      * Gets Descriptive Summary of Car.
      */
     public get_descriptive_name(): string {
-        return `${this.make} ${this.model} ${this.year}`
+        return `${this.make} ${this.model} ${this.year}`;
     }
 
 }

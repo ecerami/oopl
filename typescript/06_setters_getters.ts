@@ -23,6 +23,7 @@ class Person {
 
 let person = new Person("John", "Smith", 20);
 console.log(person.age);
-// person.age = 29; // This works
-//person.age = 250; // This fails
+person.age = 29; // This works
+person.age = 250; // This fails
+console.log(person.age);
 

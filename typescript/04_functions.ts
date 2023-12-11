@@ -3,4 +3,4 @@ function log_msg (msg: string): void {
     console.log(msg);
 }
 
-log_msg("Hello")
+log_msg("Hello");

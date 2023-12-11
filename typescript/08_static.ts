@@ -1,7 +1,7 @@
 enum cupSize {small, medium, large};
 
 /**
- * Contact Class.
+ * Coffee Order.
  */
  class CoffeeOrder {
     private coffeeType: string;
